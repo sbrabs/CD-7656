@@ -1,0 +1,64 @@
+steps:
+  REGION-d1fa691b-d892-4dcb-89ad-f3e7eb883717:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SRCC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c2536586-ce03-4219-8729-9863c68063c2
+              stepCounter: d1fa691b-d892-4dcb-89ad-f3e7eb883717
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8f2bdf13-3d42-4e54-b2a4-7dd9fc0f6835
+              stepCounter: d1fa691b-d892-4dcb-89ad-f3e7eb883717
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4aa0bfc2-c1fd-4aa0-9cae-888cbc5e8b62
+              stepCounter: d1fa691b-d892-4dcb-89ad-f3e7eb883717
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: d1fa691b-d892-4dcb-89ad-f3e7eb883717

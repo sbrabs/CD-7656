@@ -17,6 +17,11 @@ locations:
       "90":
         database: COALESCE_SAMPLE_DATABASE
         schema: TPCH_SF001
+  SRCC:
+    mappingDefinitions:
+      "90":
+        database: ""
+        schema: ""
 macros: {}
 packages: {}
 projects: {}
